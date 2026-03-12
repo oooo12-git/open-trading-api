@@ -83,8 +83,6 @@ class ApiExecutor:
             
             # 소문자 버전 (함수 파라미터)
             dynamic_mappings[param_name] = trenv_value
-            # 대문자 버전 (API 파라미터) 
-            dynamic_mappings[param_name.upper()] = trenv_value
             
             discovered_mappings.append(f"{param_name}=xxx.{trenv_attr}")
         
